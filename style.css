@@ -36,7 +36,6 @@ body {
 .container {
   width: min(90vw, 800px);
   margin: auto;
-  font-weight: normal;
 }
 
 /* Titles =====================*/
@@ -172,10 +171,10 @@ table thead th {
   color: #969cb3;
 }
 
-table tr {
+table tbody tr {
   opacity: 0.7;
 }
-table tr:hover {
+table tbody tr:hover {
   opacity: 1;
 }
 
@@ -208,6 +207,7 @@ td.expense {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
+  z-index: 999;
 }
 
 .modal-overlay.active {
@@ -218,8 +218,8 @@ td.expense {
 .modal {
   background: #f0f2f5;
   padding: 2.4rem;
-  width: 90%;
-  max-width: 500px;
+  position: relative;
+  z-index; 1;
 }
 
 /*Form ====================*/
@@ -237,14 +237,14 @@ input {
 
   padding: 0.8rem;
 
-  width: 100;
+  width: 100%;
 }
 
 .input-group {
   margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group help {
   opacity: 0.4;
 }
 

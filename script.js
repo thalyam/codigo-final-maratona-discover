@@ -18,7 +18,7 @@ const Modal = {
 }
 
 const Storage = {
-    get() {
+     get() {
         return JSON.parse(localStorage.getItem("dev.finances:transactions")) ||
         []
 
